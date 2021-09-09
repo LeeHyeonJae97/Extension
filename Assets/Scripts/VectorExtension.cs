@@ -249,5 +249,29 @@ namespace Extension
         }
 
         #endregion
+
+        #region Distance / SquareDistance
+
+        public static float Dst(this Vector2 from, Vector2 to)
+        {
+            return (from - to).magnitude;
+        }
+
+        public static float Dst(this Vector3 from, Vector3 to)
+        {
+            return (from - to).magnitude;
+        }
+
+        public static float SqrDst(this Vector2 from, Vector2 to)
+        {
+            return (from - to).sqrMagnitude;
+        }
+
+        public static float SqrDst(this Vector3 from, Vector3 to)
+        {
+            return (from - to).sqrMagnitude;
+        }
+
+        #endregion
     }
 }
