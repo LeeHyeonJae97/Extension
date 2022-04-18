@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum FrameType { Inner, Center, Outer }
-
 namespace Extension
 {
 	public static class GizmosExtension
 	{
+		public enum FrameType { Inner, Center, Outer }
+		
 		public static Color color { get { return Gizmos.color; } set { Gizmos.color = value; } }
 
 		public static float circleDetail = 15;
